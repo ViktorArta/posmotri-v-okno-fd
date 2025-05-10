@@ -138,6 +138,10 @@ ol {
   gap: 30px;
 }
 
+.content__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .content__video-card {
   display: flex;
   align-items: start;
@@ -198,6 +202,11 @@ ol {
   font-size: 18px;
   line-height: 100%;
 }
+
+.search-form__textfield:active {
+  border: none;
+}
+
 .search-form__textfield:focus-visible,
 .search-form__checkbox:focus-visible,
 .button:focus,
@@ -217,6 +226,7 @@ ol {
   font-size: 18px;
   line-height: 22px;
 }
+
 
 .search-form__pseudo-checkbox {
   display: flex;
