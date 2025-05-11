@@ -19,7 +19,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 133px;
 }
 
 h1,
@@ -190,9 +189,10 @@ ol {
 .search-form__textfield {
   width: 225px;
   height: 27px;
-  border-width: 1px 0px;
-  border-style: solid;
-  border-color: #ffffff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   padding: 0;
   color: #ffffff;
   background-color: transparent;
@@ -204,7 +204,8 @@ ol {
 }
 
 .search-form__textfield:active {
-  border: none;
+  border: 1px solid #fff;
+  outline: none;
 }
 
 .search-form__textfield:focus-visible,
@@ -213,6 +214,7 @@ ol {
 .content__card-link:focus {
   outline: none;
 }
+
 .search-form__label:has(:focus-visible),
 .search-form__checkbox:has(:focus-visible),
 .button:focus-visible,
@@ -226,7 +228,6 @@ ol {
   font-size: 18px;
   line-height: 22px;
 }
-
 
 .search-form__pseudo-checkbox {
   display: flex;
